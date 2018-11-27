@@ -1,5 +1,5 @@
 Object List Merger
 -----
-Coding language: Python3
-Coding standard: PEP8
-Test framework: unittest
+Coding language: Python3 <br/>
+Coding standard: PEP8 <br/>
+Test framework: unittest <br/>
