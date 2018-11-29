@@ -15,10 +15,10 @@ class testCase(unittest.TestCase):
 
         #test 2 ---> success
         input2 = [['scissor',1, 99], ['spoon', 2, 65], ['keys', 3, 33], ['spoon', 4, 80], ['knife', 5, 95]]
-        self.assertEqual(code.getInput(2,input1)[0].dataNum, 2) #should be from input2
-        self.assertEqual(code.getInput(2,input1)[0].objName, 'scissor') #should be scissor
-        self.assertEqual(code.getInput(2,input1)[0].objNum, 1) #should be 1
-        self.assertEqual(code.getInput(2,input1)[0].prec, 99) #should be 99
+        self.assertEqual(code.getInput(2,input2)[0].dataNum, 2) #should be from input2
+        self.assertEqual(code.getInput(2,input2)[0].objName, 'scissor') #should be scissor
+        self.assertEqual(code.getInput(2,input2)[0].objNum, 1) #should be 1
+        self.assertEqual(code.getInput(2,input2)[0].prec, 99) #should be 99
 
     def test_selector(self):
         #test 1 --->failure
