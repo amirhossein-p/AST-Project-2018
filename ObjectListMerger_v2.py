@@ -19,7 +19,11 @@ def selector(data1, data2):
         selected = data2
     return selected
 
-
+def getOutput(in1, in2):
+    outList = []
+    for i in range(len(in1)):
+        outList.append(selector(in1[i],in2[i]))
+    return outList
 
 
 if __name__ == '__main__':
@@ -27,10 +31,8 @@ if __name__ == '__main__':
     input2 = [['knife',1, 55], ['scissor', 2, 95], ['fork', 3, 99], ['spoon', 4, 99], ['keys', 5, 95] ]
     in1 = getInput(1,input1)
     in2 = getInput(2,input2)
-    
-    outList = []
-    for i in range(len(in1)):
-        outList.append(selector(in1[i],in2[i]))
+
+    outList = getOutput(in1, in2)
 
     outStr = []
     for a in outList:
