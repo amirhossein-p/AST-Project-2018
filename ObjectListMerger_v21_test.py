@@ -1,6 +1,5 @@
-
 import unittest
-import ObjectListMerger_v2 as code
+import ObjectListMerger_v21 as code
 
 class testCase(unittest.TestCase):
     """Tests for ObjectListMerger_v1.py"""
@@ -204,6 +203,21 @@ class testCase(unittest.TestCase):
         in1 = code.getInput(1,input1)
         in2 = code.getInput(2,input2)
         self.assertEqual(code.getOutput(in1,in2)[0].dataNum,1)
+
+
+
+        def test_multiSelect(self):
+            #test 1:
+            input11 = [['knife',1, 89]]
+            input21 = [['knife',1, 35]]
+            input21 = [['knife',1, 69]]
+            input22 = [['knife',1, 80]]
+
+            in11 = code.getInput(1,input11)
+            in21 = code.getInput(2,input21)
+            in12 = code.getInput(1,input12)
+            in22 = code.getInput(2,input22)
+            self.assertEqual(code.getOutput([in11,in21,in12,in22])[0].data.prec,89)
 
 
 
