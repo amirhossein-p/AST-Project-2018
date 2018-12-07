@@ -7,8 +7,11 @@ class inputData:
 
 def getInput(dataNumber,inData):
     outList = []
-    for i in inData:
-        outList.append( inputData(dataNumber, i[0], i[1], i[2]) )
+    if len(inData) < 1 :
+        outList.append( inputData(0, '-', 0, 0) )
+    else:
+        for i in inData:
+            outList.append( inputData(dataNumber, i[0], i[1], i[2]) )
     return outList
 
 def selector(data1, data2):
