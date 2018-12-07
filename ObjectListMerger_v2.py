@@ -6,6 +6,8 @@ class inputData:
         self.prec = prec
 
 def getInput(dataNumber,inData):
+    if len(inData) < 1 :
+        return None
     outList = []
     for i in inData:
         outList.append( inputData(dataNumber, i[0], i[1], i[2]) )
