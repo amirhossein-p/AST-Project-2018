@@ -6,11 +6,12 @@ class inputData:
         self.prec = prec
 
 def getInput(dataNumber,inData):
-    if len(inData) < 1 :
-        return None
     outList = []
-    for i in inData:
-        outList.append( inputData(dataNumber, i[0], i[1], i[2]) )
+    if len(inData) < 1 :
+        outList.append( inputData(None, None, None, None) )
+    else:
+        for i in inData:
+            outList.append( inputData(dataNumber, i[0], i[1], i[2]) )
     return outList
 
 def selector(data1, data2):
