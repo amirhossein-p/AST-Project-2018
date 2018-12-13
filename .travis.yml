@@ -4,4 +4,4 @@ python:
 install:
   - true
 script:
-  - python3 ObjectListMerger_v3_test
+  - python3 ObjectListMerger_v3_test.py
