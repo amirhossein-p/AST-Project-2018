@@ -1,5 +1,5 @@
 import unittest
-import ObjectListMerger_v21 as code
+import ObjectListMerger_v3 as code
 
 class testCase(unittest.TestCase):
     """Tests for ObjectListMerger_v1.py"""
