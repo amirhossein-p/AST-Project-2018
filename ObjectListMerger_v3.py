@@ -1,11 +1,8 @@
-class inputData:
-    def __init__(self,dataNum,objName,objNum,prec):
-        self.dataNum = dataNum
-        self.objName = objName
-        self.objNum = objNum
-        self.prec = prec
+from inputData import inputData
 
 def getInput(dataNumber,inData):
+    ''' Converts received data to data type objects
+        Returns list of objects '''
     outList = []
     if len(inData) < 1 :
         outList.append( inputData(0, '-', 0, 0) )
@@ -15,6 +12,8 @@ def getInput(dataNumber,inData):
     return outList
 
 def selector(data1, data2):
+    ''' Returns the object with higher precision
+        Returns an object '''
     selected = None
     if (data1.prec >= data2.prec):
         selected = data1
@@ -22,13 +21,9 @@ def selector(data1, data2):
         selected = data2
     return selected
 
-# def getOutput(in1, in2):
-#     outList = []
-#     for i in range(len(in1)):
-#         outList.append(selector(in1[i],in2[i]))
-#     return outList
-
 def getOutput(in1, in2):
+    ''' Finds pair objects and calls selector function to get the better one
+        Returns list of objects '''
     in1.sort(key=lambda x: x.prec , reverse=True)
     in1.sort(key=lambda x: x.objNum , reverse=False)
     in2.sort(key=lambda x: x.prec , reverse=True)
@@ -45,6 +40,8 @@ def getOutput(in1, in2):
     return lst
 
 def multiSelect(inData):
+    ''' Enables comparement for more than two input lists by calling getOutput function as much as needed
+        Returns list of objects '''
     result = []
     cnt = 0
     for i in range(int(len(inData)/2)):
