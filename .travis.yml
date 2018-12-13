@@ -1,7 +1,10 @@
+sudo: false
 language: python
 python:
   - "3.5"
 install:
-  - true
+  - pip3 install codecov
 script:
-  - python3 ObjectListMerger_v3_test.py
+  - coverage run ObjectListMerger_v3_test.py
+after_success:
+  - codecov
