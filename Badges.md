@@ -1,0 +1,5 @@
+### CI test:
+CI test is done by Travis CI. For using Travis CI in a project, first step is to connecting it to the project GitHub repository. This is done by sigining up to GitHub through travis-ci.com. After selecting the repository and accepting authorization, The repository will appear on Travis CI page and is ready to work. <br/>
+Test will start after a new commit that contains *.travis.yml* file. This [file](https://github.com/amirhossein-p/AST-Project-2018/blob/master/.travis.yml) contains commands for Travis. After finishing the test we can see the result and details.
+### Badges:
+Bages illustrate the status for different aspects of the project, they are links to that specific parts. They are basically a svg image and a link. For Travis CI status we can easily click on the badge on top of the page, copy the line and paste it in the markdown file. For getting codecov badge, we need to add */graph/badge.svg* to the end of the codecov page link. It is also possible to create any kind of badge that we need via shields.io. After getting the svg file we add it to markdown with corresponding link.

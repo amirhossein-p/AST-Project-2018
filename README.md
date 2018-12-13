@@ -104,3 +104,13 @@ There is no license associated with this program.
 ## Acknowledgments
 
 * Deebul Nair - https://github.com/deebuls/ast-2018
+
+## Badges
+
+| Service   |      Master      |  v3.0 |
+|:---------:|:----------------:|:-----:|
+| CI Status |  [![Build Status](https://travis-ci.com/amirhossein-p/AST-Project-2018.svg?branch=master)](https://travis-ci.com/amirhossein-p/AST-Project-2018)    | [![Build Status](https://travis-ci.com/amirhossein-p/AST-Project-2018.svg?branch=master)](https://travis-ci.com/amirhossein-p/AST-Project-2018) |
+| Code Coverage |    [![Build Status](https://codecov.io/gh/amirhossein-p/AST-Project-2018/branch/master/graph/badge.svg)](https://codecov.io/gh/amirhossein-p/AST-Project-2018/branch/master)   |   [![Build Status](https://codecov.io/gh/amirhossein-p/AST-Project-2018/branch/objectListMerger_v3/graph/badge.svg)](https://codecov.io/gh/amirhossein-p/AST-Project-2018/branch/objectListMerger_v3) |
+| Test Report | ![Build Status](https://img.shields.io/badge/Test%20Report-Master-blue.svg) |    ![Build Status](https://img.shields.io/badge/Test%20Report-objectListMerger__v3-blue.svg) |
+| Documentation | [![Build Status](https://img.shields.io/badge/Documentation-Master-blue.svg)](https://github.com/amirhossein-p/AST-Project-2018/blob/objectListMerger_v3/README.md) |    ![Build Status](https://img.shields.io/badge/Documentation-objectListMerger__v3-blue.svg) |
+| Release | [![Build Status](https://img.shields.io/badge/Release-v3.0r1.0-yellow.svg)](https://github.com/amirhossein-p/AST-Project-2018/releases/tag/v3.0r1.0) |     |
