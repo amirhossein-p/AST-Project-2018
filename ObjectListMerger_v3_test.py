@@ -217,7 +217,7 @@ class testCase(unittest.TestCase):
             in21 = code.getInput(2,input21)
             in12 = code.getInput(1,input12)
             in22 = code.getInput(2,input22)
-            self.assertEqual(code.getOutput([in11,in21,in12,in22])[0].data.prec,89)
+            self.assertEqual(code.multiSelect([in11,in21,in12,in22])[0].data.prec,89)
 
 
 
