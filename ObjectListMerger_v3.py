@@ -1,5 +1,4 @@
 from inputData import inputData
-import numpy
 
 def getInput(dataNumber,inData):
     ''' Converts received data to data type objects
@@ -70,7 +69,7 @@ if __name__ == '__main__':
     in11 = getInput(1,input11)
     in12 = getInput(2,input12)
     in21 = getInput(3,input21)
-#     in22 = getInput(4,input22)
+    in22 = getInput(4,input22)
 
     outList = multiSelect([in11, in12, in21, in22])[0]
 
@@ -78,4 +77,4 @@ if __name__ == '__main__':
     for a in outList:
         outStr.append('(' + a.objName + ',' + str(a.objNum) + ',' + str(a.prec) + '%' + ')')
     print(outStr)
-    print(outStr)
+    print(in22)
