@@ -77,4 +77,3 @@ if __name__ == '__main__':
     for a in outList:
         outStr.append('(' + a.objName + ',' + str(a.objNum) + ',' + str(a.prec) + '%' + ')')
     print(outStr)
-    print(in22)
