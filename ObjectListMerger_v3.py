@@ -1,5 +1,5 @@
 from inputData import inputData
-import numpy as np
+import numpy
 
 def getInput(dataNumber,inData):
     ''' Converts received data to data type objects
@@ -77,4 +77,5 @@ if __name__ == '__main__':
     outStr = []
     for a in outList:
         outStr.append('(' + a.objName + ',' + str(a.objNum) + ',' + str(a.prec) + '%' + ')')
+    print(outStr)
     print(outStr)
