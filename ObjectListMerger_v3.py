@@ -1,5 +1,5 @@
 from inputData import inputData
-
+import numpy as np
 
 def getInput(dataNumber,inData):
     ''' Converts received data to data type objects
